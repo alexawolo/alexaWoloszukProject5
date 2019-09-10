@@ -18,6 +18,11 @@
     flex-direction: column;
     justify-content: center;
     width: 250px;
+    opacity: 0;
+}
+
+.cardContent:hover {
+    opacity: .5;
 }
 
 .queenQuote {
@@ -27,19 +32,16 @@
 img {
     position: relative;
     width: 100%;
-    z-index: -2;
+    z-index: -1;
 }
 
 .queenName, .queenQuote {
-    visibility: hidden;
+    color: black;
 }
 
-.queenCard:active {
+
+.queenCard:hover {
     background-color: fuchsia;
     opacity: .5;
 }
 
-.queenName:active, .queenQuote:active {
-    visibility: visible;
-    color: blue;
-}

@@ -12,7 +12,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      queenArray: []
+      queenArray: [],
+      contentShown: false,
     }
   }
 
@@ -50,18 +51,19 @@ class App extends Component {
     });
   }
 
-  handleClick(event) {
+  handleClick= (event) => {
     console.log('clicked!');
-
-
-
+    this.setState({
+      contentShown: !this.state.contentShown
+    });
   }
 
   render(){
+    const { isContentShown } = this.state;
     return (
       <div className="App">
         <h1>Don't be a drag, just be a queen</h1>
-        <h2>Click on the queens below to find out their name and famous quote!</h2>
+        <h2>Hover beside the queens below to find out their name and famous quote!</h2>
         <div className="allCards">
           {this.state.queenArray.map((queen) => {
             //parameter is queen, the arguement is the object that exist in the array
@@ -74,6 +76,7 @@ class App extends Component {
                 quote={queen.quote}
                 key={queen.id}
               />
+
             )
           })}
         </div>

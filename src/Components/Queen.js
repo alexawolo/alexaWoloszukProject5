@@ -26,8 +26,8 @@ class Queen extends Component{
 
     render(){
         return(
-            <div className="queenCard">
-                <img src={this.state.src} alt="" onClick={this.props.click} onError={this.imageError}/>
+            <div className="queenCard" onClick={this.props.click}>
+                <img src={this.state.src} alt="" onError={this.imageError}/>
                 <div className="cardContent">
                     <h2 className="queenName">{this.props.name}</h2>
                     <p className="queenQuote">{this.props.quote}</p>
