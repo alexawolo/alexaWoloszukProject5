@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/alexaWoloszukProject5/static/css/main.dcbd7d11.chunk.css",
-    "main.js": "/alexaWoloszukProject5/static/js/main.ccd4ec77.chunk.js",
-    "main.js.map": "/alexaWoloszukProject5/static/js/main.ccd4ec77.chunk.js.map",
+    "main.css": "/alexaWoloszukProject5/static/css/main.7a3818b4.chunk.css",
+    "main.js": "/alexaWoloszukProject5/static/js/main.15b00ea2.chunk.js",
+    "main.js.map": "/alexaWoloszukProject5/static/js/main.15b00ea2.chunk.js.map",
     "runtime~main.js": "/alexaWoloszukProject5/static/js/runtime~main.0c0e0b40.js",
     "runtime~main.js.map": "/alexaWoloszukProject5/static/js/runtime~main.0c0e0b40.js.map",
     "static/js/2.b659da45.chunk.js": "/alexaWoloszukProject5/static/js/2.b659da45.chunk.js",
     "static/js/2.b659da45.chunk.js.map": "/alexaWoloszukProject5/static/js/2.b659da45.chunk.js.map",
     "index.html": "/alexaWoloszukProject5/index.html",
-    "precache-manifest.b096015221c324eec6a6b69a7c0383cf.js": "/alexaWoloszukProject5/precache-manifest.b096015221c324eec6a6b69a7c0383cf.js",
+    "precache-manifest.dafc48831f350f6ff097b86048d6d350.js": "/alexaWoloszukProject5/precache-manifest.dafc48831f350f6ff097b86048d6d350.js",
     "service-worker.js": "/alexaWoloszukProject5/service-worker.js",
-    "static/css/main.dcbd7d11.chunk.css.map": "/alexaWoloszukProject5/static/css/main.dcbd7d11.chunk.css.map"
+    "static/css/main.7a3818b4.chunk.css.map": "/alexaWoloszukProject5/static/css/main.7a3818b4.chunk.css.map"
   }
 }
