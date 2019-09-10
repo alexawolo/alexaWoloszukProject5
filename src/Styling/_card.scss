@@ -9,25 +9,37 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 30%;
+    width: 500px;
+    height: 400px;
 }
 
 .cardContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 300px;
+    width: 250px;
 }
 
 .queenQuote {
     text-align: left;
 }
 
-// img {
-//     width: 120px;
-//     height: 220px;
-// }
+img {
+    position: relative;
+    width: 100%;
+    z-index: -2;
+}
 
-img:hover {
-    filter: greyscale(1);
+.queenName, .queenQuote {
+    visibility: hidden;
+}
+
+.queenCard:active {
+    background-color: fuchsia;
+    opacity: .5;
+}
+
+.queenName:active, .queenQuote:active {
+    visibility: visible;
+    color: blue;
 }
