@@ -28,16 +28,26 @@ class App extends Component {
       }
 
     }).then((res) => {
-      console.log(res.data);
+      // console.log(res.data); // outputs array obj of 140 queens
 
-      let randomizedQueens = (res.data[Math.floor(Math.random() * res.data.length)]);
-      console.log(randomizedQueens);
+      // clone original array
+      const data = [...res.data];
+      const randomQueenArray = [];
 
-      const tenQueensArray = res.data.slice(0, 10);
-      // console.log(tenQueensArray);
+      // for loop
+      for (let i = 0; i < 9; i++){
+        let randomNumber = Math.floor(Math.random() * data.length )
+        randomQueenArray.push(data[randomNumber])
+
+        data.splice(randomNumber, 1);
+        console.log(randomQueenArray);
+
+
+      }
 
         this.setState({
-          queenArray: res.data  
+          queenArray: randomQueenArray,
+          noRepeatQueensArray: data
         }
       );
     });
@@ -47,12 +57,28 @@ class App extends Component {
     console.log('clicked!');
   }
 
+//   loadMoreClick(event) {
+//     // instead of getting data from noRepeatQueensArray
+
+//     // Gettin extra 9 queens (for load more)
+//     // for (let i = 0; i < 9; i++){
+//     //   let randomNumber = Math.floor(Math.random() * data.length )
+//     //   extraQueens.push(data[randomNumber])
+
+//     //   data.splice(randomNumber, 1);
+//     //   console.log(extraQueens);
+//     // }
+// q
+//     // concatenate extraQueens and copied this.state.queensArray
+//     // update state (setState) .. make the above queenArray
+//   }
+
   render(){
     return (
       <div className="App">
-        <h1 onClick={this.handleClick}>Don't be a drag, just be a queen</h1>
+        <h1>Don't be a drag, just be a queen</h1>
         <h2>Click on the queens below to find out their name and famous quote!</h2>
-        <button className="winnersButton">👑</button>
+        <button className="loadMoreButton">Load More</button>
         <div className="allCards">
           {this.state.queenArray.map((queen) => {
             //parameter is queen, the arguement is the object that exist in the array
@@ -60,6 +86,7 @@ class App extends Component {
             return (
               <Queen 
                 img={queen.image_url}
+                click={this.handleClick}
                 // name={queen.name} 
                 // quote={queen.quote}
                 key={queen.id}

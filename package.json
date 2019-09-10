@@ -2,8 +2,10 @@
   "name": "project5",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://alexawolo.github.io/alexaWoloszukProject5/",
   "dependencies": {
     "axios": "^0.19.0",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -13,6 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
