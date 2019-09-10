@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/alexaWoloszukProject5/static/css/main.7a3818b4.chunk.css",
+    "main.css": "/alexaWoloszukProject5/static/css/main.e712d34c.chunk.css",
     "main.js": "/alexaWoloszukProject5/static/js/main.15b00ea2.chunk.js",
     "main.js.map": "/alexaWoloszukProject5/static/js/main.15b00ea2.chunk.js.map",
     "runtime~main.js": "/alexaWoloszukProject5/static/js/runtime~main.0c0e0b40.js",
@@ -8,8 +8,8 @@
     "static/js/2.b659da45.chunk.js": "/alexaWoloszukProject5/static/js/2.b659da45.chunk.js",
     "static/js/2.b659da45.chunk.js.map": "/alexaWoloszukProject5/static/js/2.b659da45.chunk.js.map",
     "index.html": "/alexaWoloszukProject5/index.html",
-    "precache-manifest.dafc48831f350f6ff097b86048d6d350.js": "/alexaWoloszukProject5/precache-manifest.dafc48831f350f6ff097b86048d6d350.js",
+    "precache-manifest.c35babcc8fda92b3cae38db517f399ee.js": "/alexaWoloszukProject5/precache-manifest.c35babcc8fda92b3cae38db517f399ee.js",
     "service-worker.js": "/alexaWoloszukProject5/service-worker.js",
-    "static/css/main.7a3818b4.chunk.css.map": "/alexaWoloszukProject5/static/css/main.7a3818b4.chunk.css.map"
+    "static/css/main.e712d34c.chunk.css.map": "/alexaWoloszukProject5/static/css/main.e712d34c.chunk.css.map"
   }
 }
